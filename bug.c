@@ -1,0 +1,1 @@
+int main() {    int x = 10;    int *ptr = &x;    *ptr = 20;    printf("%d\n", x);    free(ptr); //ERROR: free is called on a pointer to a stack variable. This causes undefined behavior.    return 0;}
